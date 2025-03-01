@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+
+.voiture {
+    width: 300px;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+/* Voiture de gauche */
+.voiture-gauche {
+    left: 0;
+    top: 0;
+    z-index: 0;
+    transform:  scale(0.9);
+}
+
+.voiture-centre {
+    left: 150px;
+    top: 0;
+    margin-top: 50px;
+    z-index: 2;
+    transform: scale(1.4);
+}
+
+.voiture-droite {
+    left: 300px;
+    top: 0;
+    z-index: 0;
+    transform: scale(0.9);
+}
